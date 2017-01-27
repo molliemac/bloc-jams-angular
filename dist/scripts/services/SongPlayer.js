@@ -148,6 +148,17 @@
                 currentBuzzObject.setTime(time);
             }
         };
+        
+        /**
+        * @function SongPlayer.setVolume
+        * @desc public method to set the volume
+        * @param {Object}
+        */
+         SongPlayer.setVolume = function (volume) {
+             if (currentBuzzObject){
+                 currentBuzzObject.setVolume(volume);
+             }
+         };
 
         return SongPlayer;
     }
